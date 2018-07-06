@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="itemheader"
+            type="kt.hoan.instagram.component.listmain.header.viewmodel.ItemHeaderList"/>
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:background="@drawable/custom_item_header_list"
+        android:layout_width="120dp"
+        android:layout_height="120dp">
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/txtItemHeader"
+            android:text="@{itemheader.setTextItem()}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
